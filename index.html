@@ -155,8 +155,14 @@
 
   .grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    gap:20px; max-width:840px; margin:40px auto 0;
+    grid-template-columns:repeat(4, 1fr);
+    gap:20px; max-width:900px; margin:40px auto 0;
+  }
+  @media(max-width:820px){
+    .grid{grid-template-columns:repeat(2, 1fr);}
+  }
+  @media(max-width:480px){
+    .grid{grid-template-columns:1fr;}
   }
   .card{
     background:#FFFDF0; border:3px solid var(--blue);
