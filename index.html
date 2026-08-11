@@ -8,7 +8,7 @@
 <style>
   :root{
     --white:#ffffff;
-    --yellow:#FFF1AC;
+    --yellow:#FFFDF0;
     --blue:#004BFF;
     --coral:#ff6f5e;
     --pink:#ff8fa3;
@@ -112,6 +112,7 @@
     margin-top:10px;
   }
   .weather-note{
+    text-align:left;
     color:#fff;
     opacity:0.9;
     font-size:0.92rem;
@@ -144,7 +145,7 @@
   /* WHO / WHY */
   section{padding:20px 24px 56px;}
   .who{text-align:center; background:var(--white);}
-  .who p{max-width:640px; margin:0 auto 14px; font-size:1.05rem;}
+  .who p{text-align:left; max-width:640px; margin:0 auto 14px; font-size:1.05rem;}
   .who p.lede{font-weight:600; color:var(--blue);}
   .tags{display:flex; flex-wrap:wrap; justify-content:center; gap:10px; margin-top:24px;}
   .tag{
@@ -165,7 +166,7 @@
     .grid{grid-template-columns:1fr;}
   }
   .card{
-    background:#FFFDF0; border:3px solid var(--blue);
+    background:var(--yellow); border:3px solid var(--blue);
     border-radius:16px; padding:26px 20px; text-align:center;
     box-shadow:5px 5px 0 var(--blue);
   }
@@ -173,7 +174,7 @@
     font-family:'Jost', sans-serif; text-transform:uppercase;
     font-size:1.02rem; color:var(--blue); margin-bottom:8px; font-weight:700;
   }
-  .card p{font-size:0.87rem; color:#3a3a52;}
+  .card p{text-align:left; font-size:0.87rem; color:#3a3a52;}
 
   /* MAP / LOCATION */
   .location{
@@ -189,8 +190,9 @@
     font-family:'Jost', sans-serif; text-transform:uppercase;
     font-size:2rem; margin-bottom:10px; font-weight:700;
   }
-  .location p{max-width:560px; margin:0 auto 8px; opacity:0.97;}
+  .location p{text-align:left; max-width:560px; margin:0 auto 8px; opacity:0.97;}
   .meet-note{
+    text-align:left;
     display:inline-block;
     background:rgba(255,255,255,0.2);
     border:1px solid rgba(255,255,255,0.55);
@@ -225,7 +227,8 @@
     border:2px solid var(--blue);
     border-radius:14px;
     padding:20px 24px;
-    max-width:720px; margin:0 auto 14px;
+    max-width:720px; margin:0 0 14px;
+    text-align:left;
   }
   .faq-item h3{
     color:var(--blue);
@@ -245,7 +248,7 @@
     font-family:'Jost', sans-serif; text-transform:uppercase;
     font-size:2rem; margin-bottom:14px; font-weight:800; color:var(--blue);
   }
-  .cta p{max-width:520px; margin:0 auto 30px; opacity:0.9;}
+  .cta p{text-align:left; max-width:520px; margin:0 auto 30px; opacity:0.9;}
   .ig-button{
     display:inline-flex; align-items:center; gap:10px;
     background:var(--blue);
